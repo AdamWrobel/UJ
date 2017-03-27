@@ -1,7 +1,7 @@
 # Problem 1 - regionalizacja indexu 
 
 # wczytanie danych
-HPI <- read.csv("E:/1TB_disk/Dane/Projekty/R_projects/Warsztaty_UJ/Modelowanie_statystyczne/HPI.csv")
+HPI <- read.csv("HPI.csv")
 
 # przejrzenie danych
 str(HPI)
@@ -60,17 +60,4 @@ grid()
 # mozna na przyklad wyznaczyc rok dla ka¿dej obserwacji i wyfiltrowac obserwaje po 2003
 # mozna rowniez wyfiltrowac po datcie porownujac siê na przyklad z as.Date('2003-01-01')
 
-
-
-
-portfel <- a
-
-
-# model Loss Given Default (LGD)
-
-
-portfel %>% mutate(shock_for_given_state = 1.82281 * national_index_quarterly_return,
-                   value_under_scenario = current_value * (1 + shock_for_given_state),
-                   load_to_value = exposure/value_under_scenario,
-                   LGD = )
 
